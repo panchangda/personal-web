@@ -1,0 +1,119 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+  margin: 1.5em;
+}
+
+a {
+  padding-left: 0.5em;
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: rgb(83, 159, 240);
+  text-decoration: underline;
+}
+
+img {
+  border-radius: 50%;
+  width: 30vmin;
+  height: 30vmin;
+  object-position: center;
+}
+
+body {
+  /* font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif; */
+  /* font-family: "Lora", serif; */
+  /* font-family: "Roboto", sans-serif; */
+  /* letter-spacing:.02em; */
+  font-family: "Noto Sans TC", sans-serif;
+  margin: 0;
+}
+.font-italic {
+  font-style: italic;
+}
+.font-normal {
+  font-weight: normal;
+}
+.font-bold {
+  font-weight: bold;
+}
+.container {
+  margin: 0 auto;
+}
+
+.container > .sidebar {
+  display: flex;
+  flex-flow: column;
+  height: calc(89.4vh);
+  border-bottom: 1.2vh ridge rgb(83, 159, 240);
+  padding-top: 10vh;
+  align-items: center;
+}
+
+.sidebar > .contact span {
+  display: block;
+}
+.sidebar > .language {
+  margin: 1.5em auto;
+}
+.main {
+  margin: 0em 1.5em;
+}
+.main > .education-experience {
+  display: flex;
+  align-items: flex-start;
+  /* justify-content: stretch; */
+}
+
+.education-experience > .year {
+  margin-left: 2.5em;
+  flex: 1 1 0;
+}
+.education-experience > .school {
+  margin-bottom: 2.5em;
+  flex: 2 1 0;
+}
+.education-experience > .school > span {
+  margin-right: 1em;
+}
+.education-experience > .school > div {
+  margin-top: 0.8em;
+}
+/* desktop browser*/
+@media screen and (min-width: 1024px) {
+  img {
+    border-radius: 50%;
+    width: 20vmin;
+    height: 20vmin;
+    object-position: center;
+  }
+  .container {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+  }
+  /*去掉border-bottm 改为border-right*/
+  .container > .sidebar {
+    width: calc(25vw);
+    height: calc(65vh);
+    border-right: 1.2vh ridge rgb(83, 159, 240);
+    border-bottom: none;
+  }
+
+  .main {
+    height: 100vh;
+  }
+}
+
+.footer {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 0.1em;
+}
